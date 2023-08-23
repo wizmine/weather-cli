@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "private": "false",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,13 +18,18 @@
   ],
   "author": "Yaroslav Bychkov",
   "license": "ISC",
-  "homepage": "https://google.com",
+  "homepage": "https://github.com/wizmine",
   "repository": {
     "type": "git",
-    "url": "https://google.com"
+    "url": "https://github.com/wizmine"
   },
   "bugs": {
-    "url": "https://google.com",
+    "url": "https://github.com/wizmine",
     "email": "yarasity24@gmail.com"
+  },
+  "dependencies": {
+    "axios": "^1.4.0",
+    "chalk": "^5.3.0",
+    "dedent-js": "^1.0.1"
   }
 }
